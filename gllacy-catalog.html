@@ -37,9 +37,46 @@
             <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
             <li class="breadcrumbs__item breadcrumbs__item--current"><a class="breadcrumbs__link" href="#">Сливочное</a></li>
         </ul>
-        <!-- Здесь будет сортировка -->
+        
+        <section class="filters">
+            <h2 class="hidden">Фильтры и сортировка</h2>
+
+            <div class="filters__sorting">
+                <p class="filters__title">Сортировка:</p>
+                <span class="filters__popularity">по популярости</span>
+            </div>
+
+            <div class="filters__price">
+                <p class="filters__title">Цена: 100 руб. – 500 руб.</p>
+                <span class="filters__range"></span>
+            </div>
+
+            <div class="filters__fat">
+                <p class="filters__title">Жирность:</p>
+                <ul class="filters__fat--list">
+                    <li class="filters__fat--0"></li>
+                    <li class="filters__fat--10"></li>
+                    <li class="filters__fat--30"></li>
+                    <li class="filters__fat--over"></li>
+                </ul>
+            </div>
+
+            <div class="filters__fillers">
+                <p class="filters__title">Наполнители:</p>
+                <ul class="filters__fillers--list">
+                    <li class="filters__fillers--choco"></li>
+                    <li class="filters__fillers--sugar"></li>
+                    <li class="filters__fillers--fruits"></li>
+                    <li class="filters__fillers--syrup"></li>
+                    <li class="filters__fillers--jam"></li>
+                </ul>
+            </div>
+
+            <span class="filters__btn">Применить</span>
+        </section>
+
         <section class="catalog">
-            <h2 class="catelog__hidden">Список товаров</h2>
+            <h2 class="hidden">Список товаров</h2>
             <ul class="catalog__list">
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
@@ -103,7 +140,16 @@
                 </li>
             </ul>
         </section>
-        <!-- Здесь будет пагинация -->
+
+        <ul class="pagination">
+            <li class="pagination__item"><a href="#" class="pagination__previous"></a></li>
+            <li class="pagination__item"><a href="#" class="pagination__active">1</a></li>
+            <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+            <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+            <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+            <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+            <li class="pagination__item"><a href="#" class="pagination__next"></a></li>
+        </ul>
     </main>
     <footer class="footer">
         <ul class="social-list">
