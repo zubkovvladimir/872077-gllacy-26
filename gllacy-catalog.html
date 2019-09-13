@@ -24,7 +24,30 @@
                 </div>
                 <div class="main-controls__item"><a class="main-controls__login" href="#">Вход</a>
                 </div>
-                <div class="main-controls__item"><a class="main-controls__basket" href="#">Корзина</a>
+                <div class="main-controls__item"><a class="main-controls__basket" href="#">2 товара</a>
+                    <ul class="main-controls basket-list">
+                        <li class="basket-list__item">
+                            <a href="#"     class="basket-list__item--link">
+                                <button class="basket-list__btn--delete" type="button">x</button>
+                                <img src="img/icecream-icon-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом" class="basket-list__icon">
+                                <p class="basket-list__item--name">Пломбир с апельсиновым джемом</p>
+                                <p class="basket-list__item--quantity">15 кг х <span class="basket-list__item--kg">200 руб.</span></p>
+                                <p class="basket-list__item--price">300 руб.</p>
+                            </a>
+                        </li>
+                        <li class="basket-list__item">
+                            <a href="#" class="basket-list__item--link">
+                                <button class="basket-list__btn--delete" type="button">x</button>
+                                <img src="img/icecream-icon-strawberry.png" width="33" height="33" alt="Клубничный пломбир с присыпкой 
+                                из белого шоколада" class="basket-list__icon">
+                                <p class="basket-list__item--name">Клубничный пломбир с присыпкой из белого шоколада</p>
+                                <p class="basket-list__item--quantity">15 кг х <span class="basket-list__item--kg">300 руб.</span></p>
+                                <p class="basket-list__item--price">450 руб.</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="main-controls__item--total">Итого:750 руб.</p>
+                    <button class="main-controls__btn--order" type="submit">Оформить заказ</button>
                 </div>
             </div>
             <p class="main-contacts">С 10 до 20, ежедневно<a href="tel:+78124502525">812 450-25-25</a></p>
@@ -39,11 +62,16 @@
         </ul>
         
         <section class="filters">
-            <h2 class="hidden">Фильтры и сортировка</h2>
+            <h2 class="visually-hidden">Фильтры и сортировка</h2>
 
             <div class="filters__sorting">
                 <p class="filters__title">Сортировка:</p>
-                <span class="filters__popularity">по популярости</span>
+                <select class="filters__select" name="sorting">
+                    <option value="popular">по популярности</option>
+                    <option value="up">сначала недорогие</option>
+                    <option value="down">сначала дорогие</option>
+                    <option value="fat">по жирности</option>
+                </select>
             </div>
 
             <div class="filters__price">
@@ -76,67 +104,103 @@
         </section>
 
         <section class="catalog">
-            <h2 class="hidden">Список товаров</h2>
+            <h2 class="visually-hidden">Список товаров</h2>
             <ul class="catalog__list">
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
                     <img src="img/icecitrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочно-кофейное с кусочками шоколада</a></h3>
                     <img src="img/icecofee.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                     <img src="img/icestrawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочное крем-брюле с карамельной подливкой</a></h3>
                     <img src="img/icecaramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочное с брусничным джемом</a></h3>
                     <img src="img/lingonberry.jpg" alt="Сливочное с брусничным джемом" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочно-черничное с цельными</a></h3>
                     <img src="img/blueberry.jpg" alt="Сливочно-черничное с цельными" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочно-лимонное с карамельной</a></h3>
                     <img src="img/lemon.jpg" alt="Сливочно-лимонное с карамельной" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочное с шоколадной стружкой</a></h3>
                     <img src="img/choco.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочно-ванильное с кусочками шоколада</a></h3>
                     <img src="img/vanilla.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочноe с ментоловым сиропом</a></h3>
                     <img src="img/menthol.jpg" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочное с кусочками черного шоколада</a></h3>
                     <img src="img/choco-pieces.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочное с мятным сиропом</a></h3>
                     <img src="img/mint.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
                     <p class="catalog-item__price"></p>
+                    <div class="catalog-item__hover">
+                        <button class="catalog-item__btn" type="button">Быстрый просмотр</button>
+                    </div>
                 </li>
             </ul>
         </section>

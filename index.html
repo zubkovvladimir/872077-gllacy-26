@@ -13,6 +13,13 @@
 
             <ul class="site-links">
                 <li class="site-links__item"><a class="site-links__catalog" href="#">Каталог</a>
+                    <ul class="site-links__item sub-menu">
+                        <li class="sub-menu__news"><a href=""></a></li>
+                        <li class="sub-menu__creamy"><a href=""></a></li>
+                        <li class="sub-menu__sherbet"><a href=""></a></li>
+                        <li class="sub-menu__fruit-ice"><a href=""></a></li>
+                        <li class="sub-menu__melorin"><a href=""></a></li>
+                    </ul>
                 </li>
                 <li class="site-links__item"><a class="site-links__deliverynpay" href="#">Доставка и оплата</a>
                 </li>
@@ -21,17 +28,33 @@
             </ul>
             <div class="main-controls">
                 <div class="main-controls__item"><a class="main-controls__search" href="#">Поиск</a>
+                    <form class="form-search" action="" method="GET">
+                        <label class="form-search__label">
+                            <input type="search" class="form-search__input" name="search" placeholder="Крем-брюле" required>
+                        </label>
+                    </form>
                 </div>
                 <div class="main-controls__item"><a class="main-controls__login" href="#">Вход</a>
+                    <form class="form-entrance" action="" method="GET">
+                        <label class="form-entrance__label">Логин
+                            <input type="email" class="form-entrance__login--input" name="login" placeholder="email@example.com" required>
+                        </label>
+                        <label class="form-entrance__label">Пароль
+                            <input type="password" class="form-entrance__login--input" name="password" placeholder="&#149;&#149;&#149;&#149;&#149;&#149;&#149;&#149;" required>
+                        </label>
+                        <a class="form-entrance__forgot" href="#">Забыли пароль?</a>
+                        <a class="form-entrance__registration" href="#">Новая регистрация</a>
+                        <button class="form-entrance__btn" type="submit">Войти</button>
+                    </form>
                 </div>
-                <div class="main-controls__item"><a class="main-controls__basket" href="#">Корзина</a>
+                <div class="main-controls__item"><a class="main-controls__basket" href="#">Пусто</a>
                 </div>
             </div>
             <p class="main-contacts">С 10 до 20, ежедневно<a href="#">812 450-25-25</a></p>
         </nav>
     </header>
     <main class="container">
-        <h1 class="hidden">Магазин Глэйси</h1>
+        <h1 class="visually-hidden">Магазин Глэйси</h1>
         
         <section class="slider">
             <ul class="slider__list">
@@ -50,7 +73,7 @@
         </section>
 
         <section>
-            <h2 class="hidden">Спецпредложения</h2>
+            <h2 class="visually-hidden">Спецпредложения</h2>
             <ul>
                 <li>
                 <article class="offer offer--berry">
@@ -72,7 +95,7 @@
         </section>
 
         <section class="catalog">
-            <h2 class="hidden">Хиты продаж</h2>
+            <h2 class="visually-hidden">Хиты продаж</h2>
             <ul class="catalog__list">
                 <li class="catalog__item catalog-item">
                     <h3 class="catalog-item__title"><a href="#" class="catalog-item__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
@@ -140,5 +163,21 @@
             Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
         </p>
     </footer>
+    <section class="modal">
+        <p class="modal__title">Мы обязательно вам ответим!</p>
+        <button class="modal__btn-close" type="button">x</button>
+        <form class="modal__form" action="" method="POST">
+            <label class="modal__form--name">Имя Фамилия
+                <input type="text" class="modal__form--input" name="name" placeholder="Имя Фамилия" required>
+            </label>
+            <label class="modal__form--email">Почта
+                <input type="email" class="modal__form--input" name="email" placeholder="email@example.com" required>
+            </label>
+            <label class="modal__form--text">Текст сообщения
+                <textarea class="modal__form--field" name="text" rows="6" placeholder="В свободной форме" required></textarea>
+            </label>
+            <button class="modal__form--btn" type="submit" name="send" value="Отправить">Отправить</button>
+        </form>
+    </section>
 </body>
 </html>
