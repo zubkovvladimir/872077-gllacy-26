@@ -94,6 +94,13 @@
        color: #ffbc9e;
   }
 
+  .special,
+  .news-blog,
+  .news-blog a,
+  .address {
+      color: #323232;
+  }
+
   .site-links {
        font-size: 16px;
        line-height: 18px;
@@ -218,6 +225,10 @@
      font-weight: 700;
   }
 
+  .address {
+     background-color: #fefefe;
+  }
+
   .address p {
      font-size: 14px;
      line-height: 20px;
@@ -291,4 +302,30 @@
 
   .breadcrumbs__item--current a {
        text-decoration: none;
+  }
+
+  .offer--berry {
+       background-color: #5d1220;
+       background-image: url("../img/berry.jpg");
+  }
+
+  .offer--choco {
+      background-color: #3d2318;
+      background-image: url("../img/choco-background.jpg");
+  }
+
+  .special {
+      background-color: #eee2c9;
+      background-image: url("../img/background.jpg");
+  }
+
+  .news-blog {
+      background-color: #ffffff;
+      background-image: url("../img/strawberry-background.jpg");
+  }
+
+  .subscription {
+     background-color: #f8f7f4;
+     background-image: url("../img/substrate.png");
+     color: #5a5a5a;
   }
