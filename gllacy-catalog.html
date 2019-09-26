@@ -16,13 +16,13 @@
         
             <ul class="site-links">
                 <li class="site-links__item"><a class="site-links__link" href="#">Каталог</a>
-                    <ul class="site-links__item sub-menu">
+                    <!-- <ul class="site-links__item sub-menu">
                         <li class="sub-menu__item"><a href="">Новинки</a></li>
                         <li class="sub-menu__item"><a href="">Сливочное</a></li>
                         <li class="sub-menu__item"><a href="">Щербеты</a></li>
                         <li class="sub-menu__item"><a href="">Фруктовый лед</a></li>
                         <li class="sub-menu__item"><a href="">Мелорин</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="site-links__item"><a class="site-links__link" href="#">Доставка и оплата</a>
                 </li>
@@ -31,27 +31,27 @@
             </ul>
             <div class="main-controls">
                 <div class="main-controls__item"><a class="main-controls__search" href="#">Поиск</a>
-                    <form class="form-search" action="" method="GET">
+                    <!-- <form class="form-search" action="" method="GET">
                         <label class="form-search__label">
                             <input type="search" class="form-search__input" name="search" placeholder="Крем-брюле" required>
                         </label>
-                    </form>
+                    </form> -->
                 </div>
                 <div class="main-controls__item"><a class="main-controls__login" href="#">Вход</a>
-                    <form class="form-entrance" action="" method="GET">
+                    <!-- <form class="form-entrance" action="" method="GET">
                         <label class="form-entrance__label">Логин
-                            <input type="email" class="form-entrance__login--input" name="login" placeholder="Электронная почта" required>
+                            <input type="email" class="form-entrance__login--input" name="login" placeholder="email@example.com" required>
                         </label>
                         <label class="form-entrance__label">Пароль
-                            <input type="password" class="form-entrance__login--input" name="password" placeholder="Пароль" required>
+                            <input type="password" class="form-entrance__login--input" name="password" placeholder="&#149;&#149;&#149;&#149;&#149;&#149;&#149;&#149;" required>
                         </label>
                         <a class="form-entrance__forgot" href="#">Забыли пароль?</a>
                         <a class="form-entrance__registration" href="#">Новая регистрация</a>
                         <button class="form-entrance__btn" type="submit">Войти</button>
-                    </form>
+                    </form> -->
                 </div>
                 <div class="main-controls__item"><a class="main-controls__basket" href="#">2 товара</a>
-                    <ul class="main-controls basket-list">
+                    <!-- <ul class="main-controls basket-list">
                         <li class="basket-list__item">
                             <a href="#" class="basket-list__item--link">
                                 <button class="basket-list__btn--delete" type="button">x</button>
@@ -74,18 +74,27 @@
                     </ul>
                     <p class="main-controls__item--total">Итого:750 руб.</p>
                     <button class="main-controls__btn--order" type="submit">Оформить заказ</button>
-                </div>
+                </div> -->
             </div>
-            <p class="main-contacts">С 10 до 20, ежедневно<a href="tel:+78124502525">8 812 450-25-25</a></p>
-        </nav>
+        </na>
     </header>
     <main class="container">
-        <h1 class="page-title">Сливочное мороженое</h1>
-        <ul class="breadcrumbs">
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
-            <li class="breadcrumbs__item breadcrumbs__item--current"><a class="breadcrumbs__link" href="#">Сливочное</a></li>
-        </ul>
+        <div class="info-wrap">
+            <h1 class="page-title">Сливочное мороженое</h1>
+            <div class="contacts-breadcrumbs">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__item--current"><a class="breadcrumbs__link" href="#">Сливочное</a></li>
+                </ul>
+                <div class="main-contacts">
+                    <p>С 10 до 20, ежедневно</p>
+                    <p>
+                        <a href="tel:+78124502525">8 812 450-25-25</a>
+                    </p>
+                </div>
+            </div>
+        </div>
         
         <section class="filters">
             <h2 class="visually-hidden">Фильтры и сортировка</h2>
