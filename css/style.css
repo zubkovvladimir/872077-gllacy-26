@@ -53,6 +53,11 @@ img {
    height: auto;
 }
 
+fieldset {
+   border: none;
+   padding: 0;
+}
+
 .visually-hidden:not(:focus):not(:active), 
 input[type="checkbox"].visually-hidden, 
 input[type="radio"].visually-hidden {
@@ -108,13 +113,15 @@ input[type="radio"].visually-hidden {
 .social-list a, 
 .footer__navigation a, 
 .footer__copyright a, 
-.pagination a, 
+.pagination a,
 .breadcrumbs a {
    color: #ffffff;
 }
 
 .main-contacts a:focus, 
 .main-contacts a:hover,
+.address a:hover,
+.address a:focus,
 .social-list a:focus, 
 .social-list a:hover, 
 .footer__navigation a:focus, 
@@ -158,7 +165,12 @@ a.catalog-item__btn,
 .slider__list a,
 .offer__link,
 .pagination__item a,
-.breadcrumbs__item--current a {
+.breadcrumbs__item--current a,
+.address a,
+.footer__navigation_link,
+.catalog-item__link,
+.htmlacademy,
+.breadcrumbs__link {
    text-decoration: none;
 }
 
@@ -258,10 +270,6 @@ a.catalog-item__btn,
 
 .site-links__item:hover .sub-menu {
    display: block;
-}
-
-.sub-menu__item {
-   border-radius: px;
 }
 
 .sub-menu a {
@@ -702,6 +710,7 @@ a.form-entrance__registration {
    padding-top: 20px;
    justify-content: space-between;
    width: 220px;
+   margin-left: -8px;
 }
 
 .no-crumbs {
@@ -721,6 +730,10 @@ a.form-entrance__registration {
 
 .breadcrumbs__item span {
    margin-left: 8px;
+}
+
+.breadcrumbs__item--current {
+   margin-left: 5px;
 }
 
 .main-contacts {
@@ -913,11 +926,11 @@ a.form-entrance__registration {
    flex-direction: column;
 }
 
-.catalog__item:nth-child(2n+2) {
+.catalog__item:nth-child(4n+4) {
    margin-right: 0px;
 }
 
-.catalog__item:first-child {
+.catalog__item:nth-child(4n+1){
    margin-left: 0px;
 }
 
@@ -946,6 +959,7 @@ a.form-entrance__registration {
    position: absolute;   
    border-radius: 5px;   
    box-shadow: 0px 20px 5px 1px rgba(0,0,0,0.05);
+   z-index: 2;
 }
 
 .catalog__item img {
@@ -1182,7 +1196,7 @@ a.form-entrance__registration {
    font-weight: 700;
    width: 320px;
    display: block;
-   padding-bottom: 81px;
+   margin-bottom: 81px;
 }
 
 .subscription__description {
@@ -1252,11 +1266,13 @@ a.form-entrance__registration {
 }
 
 .address-phone {
-   display: block;
    margin-top: 4px;
    margin-bottom: 2px;
+   color: #323232;
+   display: inline-block;
 }
 
+.address a,
 .address span {
    font-size: 18px;
    line-height: 24px;
@@ -1375,6 +1391,7 @@ a.form-entrance__registration {
    font-weight: 700;
    order: 1;
    margin: 0;
+   margin-bottom: 28px;
 }
 
 .filters {
@@ -1391,6 +1408,7 @@ a.form-entrance__registration {
    font-size: 14px;
    line-height: 16px;
    font-weight: 500;
+   margin: 0;
 }
 
 .filters__select, 
@@ -1400,6 +1418,21 @@ a.form-entrance__registration {
    font-size: 16px;
    line-height: 18px;
    font-weight: 500;
+}
+
+.filters__fat--list {
+   display: flex;
+}
+
+.filters__select {
+   border: none;
+   background-color: rgba(255,255,255,0.2);
+   border-radius: 20px;
+   padding: 7px 10px;
+}
+
+.pagination {
+   display: flex;
 }
 
 .pagination__item {
