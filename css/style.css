@@ -129,14 +129,18 @@ input[type="radio"].visually-hidden {
 .breadcrumbs a:focus, 
 .breadcrumbs a:hover,
 .news-blog__description:hover,
-.news-blog__description:focus {
+.news-blog__description:focus, 
+.form-entrance__registration:hover,
+.form-entrance__forgot:hover, 
+.form-entrance__registration:focus,
+.form-entrance__forgot:focus,
+.catalog-item__link:hover,
+.catalog-item__link:focus {
    color: #ffbc9e;
 }
 
 .news-blog__description:hover,
-.news-blog__description:focus,
-a.form-entrance__links:hover, 
-a.form-entrance__registration:hover {
+.news-blog__description:focus {
    color: #e84d37;
 }
 
@@ -375,7 +379,7 @@ a.catalog-item__btn,
    left: 8px;
 }
 
-.main-controls__wrap--item:hover .main-controls__search::before {
+.main-controls__search--wrap:hover .main-controls__search::before {
    background-image: url("../img/magnifier-black.svg");
 }
 
@@ -397,8 +401,8 @@ a.catalog-item__btn,
    left: 18px;
 }
 
-.main-controls__login--wrap:hover a,
-.main-controls__item:hover a {
+.main-controls__login--wrap:hover>a,
+.main-controls__item:hover>a {
    color: #323232;
 }
 
@@ -442,10 +446,6 @@ a.catalog-item__btn,
    display: flex;
    flex-direction: column;
    display: none;
-}
-
-.main-controls__item:hover .login--wrap {
-   display: block;
 }
 
 .basket-wrap:hover .main-controls__basket--wrap {
@@ -574,7 +574,7 @@ a.catalog-item__btn,
    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.main-controls__search--wrap {   
+.main-controls__search--background {   
    position: absolute;
    padding: 20px 15px;
    background-color: #f8f7f4;
@@ -585,6 +585,7 @@ a.catalog-item__btn,
    height: 84px;
    box-shadow: 0px 20px 15px 1px rgba(0,0,0,0.3);
    display: none;
+   z-index: 1;
 }
 
 .form-search__input {
@@ -598,11 +599,11 @@ a.catalog-item__btn,
    line-height: 24px;
 }
 
-.main-controls__item:hover .main-controls__search--wrap {
+.main-controls__item:hover .main-controls__search--background {
    display: block;
 }
 
-.login--wrap {   
+.main-controls__login--background {   
    position: absolute;
    background-color: #f8f7f4;
    border-radius: 5px;
@@ -620,14 +621,14 @@ a.catalog-item__btn,
    height: 45px;
    color: #323232;
    border-radius: 5px;
-   border: 2px solid #d3d3d3;
+   border: 1px solid #d3d3d3;
    padding-left: 13px;
    font-size: 14px;
    line-height: 24px;
    z-index: 1;
 }
 
-.main-controls__item:hover .login--wrap {
+.main-controls__item:hover .main-controls__login--background {
    display: block;
 }
 
@@ -641,14 +642,17 @@ a.catalog-item__btn,
    padding-bottom: 19px;
 }
 
+.form-entrance__links--wrap {
+   display: flex;
+   justify-content: space-between;
+}
+
 .form-entrance__links {
    padding: 0;
    margin: 0;
    padding-left: 20px;
-}
-
-.form-entrance__links--wrap {
    display: flex;
+   flex-wrap: wrap;
 }
 
 .form-entrance {
@@ -657,13 +661,6 @@ a.catalog-item__btn,
    padding-top: 20px;
 }
 
-/* .form-entrance__btn {
-   width: 126px;
-   margin-left: 10px;
-   padding-left: 16px;
-   padding-top: 10px;
-} */
-
 .btn {
    display: inline-block;
    color: #fefefe;
@@ -671,10 +668,15 @@ a.catalog-item__btn,
    line-height: 24px;
    font-weight: 700;
    padding: 10px 24px;
-   border-radius: 21px;
+   border-radius: 20px;
    border: none;
    background-image: linear-gradient(to bottom,#f26843, #e74b36);   
    box-shadow: 0px 1px 2px 0px #9e4334;
+}
+
+.form-entrance__btn {
+   width: 126px;
+   height: 45px;
 }
 
 .btn:hover {
@@ -688,12 +690,16 @@ a.catalog-item__btn,
    box-shadow: inset 0px 1px 2px 0px #952718;
 }
 
-a.form-entrance__forgot, 
-a.form-entrance__registration {
-   color: red;
+.form-entrance__forgot,
+.form-entrance__registration {
+   color: #323232;
    font-size: 13px;
    line-height: 24px;
    font-weight: 400;
+}
+
+.form-entrance__forgot {
+   margin-bottom: -3px;
 }
 
 .info-wrap {
@@ -883,6 +889,7 @@ a.form-entrance__registration {
    border-radius: 15px;
    padding-top: 16px;
    padding-left: 18px;
+   padding-right: 20px;
    display: flex;
    flex-direction: column;
 }
@@ -911,7 +918,6 @@ a.form-entrance__registration {
    font-weight: 700;
    color: #ffffff;
    margin-left: auto;
-   margin-right: 20px;
    margin-bottom: 25px;
 }
 
@@ -958,7 +964,7 @@ a.form-entrance__registration {
    position: absolute;   
    border-radius: 5px;   
    box-shadow: 0px 20px 5px 1px rgba(0,0,0,0.05);
-   z-index: 2;
+   z-index: 1;
 }
 
 .catalog__item img {
@@ -970,13 +976,14 @@ a.form-entrance__registration {
    margin: 0;
    padding: 0;
    margin-bottom: 17px;
+   padding-bottom: 60px;
    text-align: center;
    font-size: 16px;
    line-height: 22px;
    font-weight: 500;
    width: 267px;
    order: 2;
-   z-index: 1;
+   z-index: 2;
 }
 
 .catalog-item__price {
@@ -987,6 +994,10 @@ a.form-entrance__registration {
    font-size: 45px;
    line-height: 45px;
    font-weight: 700;
+}
+
+.catalog-item__price span {
+   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .catalog-item__btn {
@@ -1036,6 +1047,7 @@ a.form-entrance__registration {
    background-color: #eee2c9;
    background-image: url("../img/background.jpg");
    margin-bottom: 40px;
+   margin-top: -60px;
    padding-top: 26px;
    padding-left: 21px;
    width: 1146px;
@@ -1266,7 +1278,7 @@ a.form-entrance__registration {
    font-weight: 400;
 }
 
-.address p:first-child {
+.address p:nth-child(4) {
    margin-bottom: 19px;
 }
 
@@ -1310,13 +1322,15 @@ a.form-entrance__registration {
 }
 
 .social-list__link {
+   display: inline-block;
    width: 38px;
    height: 38px;
-   margin-right: 10px;
-   display: block;
-   font-size: 0px;
-   border: 3px solid rgba(255, 255, 255, .5);
+   margin-right: 11px;
+   font-size: 0;
+   border: 4px solid rgba(194, 206, 199, 1.0);
    border-radius: 50%;
+   opacity: 0.8;
+   vertical-align: bottom;
 }
 
 .social-list__link--tw {
@@ -1510,7 +1524,7 @@ a.form-entrance__registration {
    height: 20px;
    position: absolute;
    border: 8px solid #ffffff;
-   box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+   box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
    cursor: pointer;
    top: 7px;
 }
