@@ -39,7 +39,7 @@
                                     <div class="main-controls__search--background">
                                         <form class="form-search" action="#" method="GET">
                                             <label class="form-search__label">
-                                                <input type="search" class="form-search__input" name="search" placeholder="Крем-брюле" required>
+                                                <input type="search" class="form-search__input input-shadow" name="search" placeholder="Крем-брюле" required>
                                             </label>
                                         </form>
                                     </div>
@@ -51,12 +51,12 @@
                                         <form class="form-entrance" action="#" method="GET">
                                             <p class="form-entrance__item">
                                                 <label class="form-entrance__label"><span class="visually-hidden">Логин</span>
-                                                    <input type="email" class="form-entrance__login--input" name="login" placeholder="email@example.com" required>
+                                                    <input type="email" class="form-entrance__login--input input-shadow" name="login" placeholder="email@example.com" required>
                                                 </label>
                                             </p>
                                             <p class="form-entrance__item">
                                                 <label class="form-entrance__label"><span class="visually-hidden">Пароль</span>
-                                                    <input type="password" class="form-entrance__login--input" name="password" placeholder="&#149;&#149;&#149;&#149;&#149;&#149;&#149;&#149;" required>
+                                                    <input type="password" class="form-entrance__login--input input-shadow" name="password" placeholder="&#149;&#149;&#149;&#149;&#149;&#149;&#149;&#149;" required>
                                                 </label>
                                             </p>
                                             <div class="form-entrance__links--wrap">
@@ -141,7 +141,7 @@
                         <li class="catalog__item hit">
                             <h3 class="catalog-item__title"><a href="#" class="catalog-item__link"><span class="site-links__border">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a></h3>
                             <img src="img/icecitrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-                            <p class="catalog-item__price"><span class="value">310</span></span><span class="weight">/кг</span></p>
+                            <p class="catalog-item__price"><span class="value">310</span><span class="weight">/кг</span></p>
                             <a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>                        
                         </li>
                         <li class="catalog__item hit">
@@ -153,13 +153,13 @@
                         <li class="catalog__item hit">
                             <h3 class="catalog-item__title"><a href="#" class="catalog-item__link"><span class="site-links__border">Сливочно-клубничное с присыпкой из белого шоколада</span></a></h3>
                             <img src="img/icestrawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-                            <p class="catalog-item__price"><span class="value">355</span></span><span class="weight">/кг</span></p>
+                            <p class="catalog-item__price"><span class="value">355</span><span class="weight">/кг</span></p>
                             <a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
                         </li>
                         <li class="catalog__item hit">
                             <h3 class="catalog-item__title"><a href="#" class="catalog-item__link"><span class="site-links__border">Сливочное крем-брюле с карамельной подливкой</span></a></h3>
                             <img src="img/icecaramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-                            <p class="catalog-item__price"><span class="value">415</span></span><span class="weight">/кг</span></p>
+                            <p class="catalog-item__price"><span class="value">415</span><span class="weight">/кг</span></p>
                             <a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
                         </li>   
                     </ul>
@@ -181,26 +181,32 @@
                 </section>
 
                 <div class="news-subscription-wrap container">
-                    <article class="news-blog">
-                        <h2 class="news-blog__title">Новое в нашем блоге</h2>
-                        <a href="#" class="news-blog__description">10 способов сервировки фруктовых щербетов к столу</a>
-                    </article>
+                    <ul class="news-subscription__list">
+                        <li>
+                            <article class="news-blog">
+                                <h2 class="news-blog__title">Новое в нашем блоге</h2>
+                                <a href="#" class="news-blog__description">10 способов сервировки фруктовых щербетов к столу</a>
+                            </article>
+                        </li>
 
-                    <section class="subscription">
-                        <h2 class="visually-hidden">Рассылка</h2>
-                        <div class="subscription__wrap">
-                            <p class="subscription__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-                            <form action="#" method="POST">
-                                <input type="text" placeholder="email@example.com" required>
-                                <button class="btn subscription__button" type="submit">Отправить</button>
-                            </form>
-                        </div>
-                    </section>
+                        <li>
+                            <section class="subscription">
+                                <h2 class="visually-hidden">Рассылка</h2>
+                                <div class="subscription__wrap">
+                                    <p class="subscription__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                                    <form action="#" method="POST">
+                                        <input class="subscription-input input-shadow" type="text" placeholder="email@example.com" required>
+                                        <button class="btn subscription__button" type="submit">Отправить</button>
+                                    </form>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="map-address">
-                    <h2 class="visually-hidden">Адрес офиса</h2>
                     <section class="address">
+                    <h2 class="visually-hidden">Адрес офиса</h2>
                         <p>Адрес главного офиса</p><p>и офлайн-магазина:</p><p><span>ул. Большая Конюшенная</span></p><p><span> 19/8, Санкт-Петербург</span></p>
                         <p>Для заказов по телефону: </p><p><a class="address-phone" href="tel:+78124502525">8 812 450-25-25</a></p><p>(с 10 до 20 ежедневно)</p>
                         <a class="btn address__btn" href="#">Форма обратной связи</a>
@@ -235,7 +241,7 @@
                     </li>
                     <li class="social-list__item">
                         <a class="social-list__link social-list__link--inst" href="#">Инстаграм
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                                 <g>
                                     <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
@@ -252,7 +258,7 @@
                     </li>
                     <li class="social-list__item">
                         <a class="social-list__link social-list__link--fb" href="#">Фейсбук
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                                 <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
                                v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
@@ -261,7 +267,7 @@
                     </li>
                     <li class="social-list__item">
                         <a class="social-list__link social-list__link--vk" href="#">Вконтакте
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                                 <g>
                                     <path fill="#FFFFFF" d="M16.637,14.495c0.402-0.019,0.719-0.082,0.951-0.188c0.326-0.145,0.54-0.33,0.641-0.559
@@ -299,17 +305,18 @@
                 </p>
             </footer>
             <section class="modal">
+                <h2 class="visually-hidden">Обратная связь</h2>
                 <p class="modal__title">Мы обязательно вам ответим!</p>
                 <button class="modal__btn-close" type="button"><span class="visually-hidden">Закрыть</span></button>
                 <form class="modal__form" action="#" method="POST">
                     <label class="modal__form--name"><span  class="visually-hidden">Имя Фамилия</span>
-                        <input type="text" class="modal__form--input" name="name" placeholder="Имя Фамилия" required>
+                        <input type="text" class="modal__form--input input-shadow" name="name" placeholder="Имя Фамилия" required>
                     </label>
                     <label class="modal__form--email"><span  class="visually-hidden">Почта</span>
-                        <input type="email" class="modal__form--input" name="email" placeholder="email@example.com" required>
+                        <input type="email" class="modal__form--input input-shadow" name="email" placeholder="email@example.com" required>
                     </label>
                     <label class="modal__form--text"><span  class="visually-hidden">Текст сообщения</span>
-                        <textarea class="modal__form--field" name="text" rows="6" placeholder="В свободной форме" required></textarea>
+                        <textarea class="modal__form--field input-shadow" name="text" rows="6" placeholder="В свободной форме" required></textarea>
                     </label>
                     <button class="btn modal__form--btn" type="submit">Отправить</button>
                 </form>

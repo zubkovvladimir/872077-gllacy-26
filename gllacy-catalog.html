@@ -19,7 +19,7 @@
                         <li class="site-links__item active"><a class="site-links__catalog" href="#">Каталог</a>
                             <ul class="site-links__item sub-menu">
                                 <li class="sub-menu__item"><p>Новинки</p></li>
-                                <li class="sub-menu__item active"><a href="">Сливочное</a></li>
+                                <li class="sub-menu__item active"><a href="#">Сливочное</a></li>
                                 <li class="sub-menu__item"><a href="#">Щербеты</a></li>
                                 <li class="sub-menu__item"><a href="#">Фруктовый лед</a></li>
                                 <li class="sub-menu__item"><a href="#">Мелорин</a></li>
@@ -36,7 +36,7 @@
                                     <div class="main-controls__search--background">
                                         <form class="form-search" action="#" method="GET">
                                             <label class="form-search__label">
-                                                <input type="search" class="form-search__input" name="search" placeholder="Крем-брюле" required>
+                                                <input type="search" class="form-search__input input-shadow" name="search" placeholder="Крем-брюле" required>
                                             </label>
                                         </form>
                                     </div>
@@ -48,12 +48,12 @@
                                         <form class="form-entrance" action="#" method="GET">
                                             <p class="form-entrance__item">
                                                 <label class="form-entrance__label"><span class="visually-hidden">Логин</span>
-                                                    <input type="email" class="form-entrance__login--input" name="login" placeholder="email@example.com" required>
+                                                    <input type="email" class="form-entrance__login--input input-shadow" name="login" placeholder="email@example.com" required>
                                                 </label>
                                             </p>
                                             <p class="form-entrance__item">
                                                 <label class="form-entrance__label"><span class="visually-hidden">Пароль</span>
-                                                    <input type="password" class="form-entrance__login--input" name="password" placeholder="&#149;&#149;&#149;&#149;&#149;&#149;&#149;&#149;" required>
+                                                    <input type="password" class="form-entrance__login--input input-shadow" name="password" placeholder="&#149;&#149;&#149;&#149;&#149;&#149;&#149;&#149;" required>
                                                 </label>
                                             </p>
                                             <div class="form-entrance__links--wrap">
@@ -97,7 +97,7 @@
                                 </div>
                             </div>
                         </div>
-                </na>
+                </nav>
             </header>
             <main>
                 <div class="info-wrap">
@@ -148,17 +148,17 @@
                             <div class="filters__fat--background">
                                 <ul class="filters__fat--list">
                                     <li class="filters__fat--item">
-                                        <label for="fat-0" tabindex="0">0%</label>
-                                        <input type="radio" class="radio-filter" id="fat-0" name="fat" value="0"></li>
+                                        <input type="radio" class="radio-filter visually-hidden" id="fat-0" name="fat" value="0">
+                                        <label for="fat-0" tabindex="0">0%</label></li>
                                     <li class="filters__fat--item">
-                                        <label for="fat-10" tabindex="0">до 10%</label>
-                                        <input type="radio" class="radio-filter" id="fat-10" name="fat" value="10" checked></li>
+                                        <input type="radio" class="radio-filter visually-hidden" id="fat-10" name="fat" value="10" checked>
+                                        <label for="fat-10" tabindex="0">до 10%</label></li>
                                     <li class="filters__fat--item">
-                                        <label for="fat-20" tabindex="0">до 30%</label>
-                                        <input type="radio" class="radio-filter" id="fat-20" name="fat" value="30"></li>
+                                        <input type="radio" class="radio-filter visually-hidden" id="fat-20" name="fat" value="30">
+                                        <label for="fat-20" tabindex="0">до 30%</label></li>
                                     <li class="filters__fat--item">
-                                        <label for="fat-over-30" tabindex="0">выше 30%</label>
-                                        <input type="radio" class="radio-filter" id="fat-over-30" name="fat" value="over-30"></li>
+                                        <input type="radio" class="radio-filter visually-hidden" id="fat-over-30" name="fat" value="over-30">
+                                        <label for="fat-over-30" tabindex="0">выше 30%</label></li>
                                 </ul>
                             </div>
                         </fieldset>
@@ -169,23 +169,23 @@
                             <div class="filters__fillers--background">
                                 <ul class="filters__fillers--list">
                                     <li class="filters__fillers--item">
-                                        <input type="checkbox" class="checkbox-filter" id="choco" name="filter-fillers" checked>
+                                        <input type="checkbox" class="checkbox-filter visually-hidden" id="choco" name="filter-fillers" checked>
                                         <label for="choco" tabindex="0">шоколадные</label>
                                         </li>
                                     <li class="filters__fillers--item">
-                                        <input type="checkbox" class="checkbox-filter" id="shugar" name="filter-fillers" checked>
+                                        <input type="checkbox" class="checkbox-filter visually-hidden" id="shugar" name="filter-fillers" checked>
                                         <label for="shugar" tabindex="0">сахарные присыпки</label>
                                         </li>
                                     <li class="filters__fillers--item">
-                                        <input type="checkbox" class="checkbox-filter" id="fruits" name="filter-fillers">
+                                        <input type="checkbox" class="checkbox-filter visually-hidden" id="fruits" name="filter-fillers">
                                         <label for="fruits" tabindex="0">фрукты</label>    
                                         </li>
                                     <li class="filters__fillers--item">
-                                        <input type="checkbox" class="checkbox-filter" id="syrup" name="filter-fillers">
+                                        <input type="checkbox" class="checkbox-filter visually-hidden" id="syrup" name="filter-fillers">
                                         <label for="syrup" tabindex="0">сиропы</label>
                                         </li>
                                     <li class="filters__fillers--item">
-                                        <input type="checkbox" class="checkbox-filter" id="jam" name="filter-fillers">
+                                        <input type="checkbox" class="checkbox-filter visually-hidden" id="jam" name="filter-fillers">
                                         <label for="jam" tabindex="0">джемы</label>
                                         </li>
                                 </ul>
@@ -239,7 +239,7 @@
                             </div>
                         </li>
                         <li class="catalog__item catalog-item">
-                            <h3 class="catalog-item__title"><a href="#" class="catalog-item__link"><span class="site-links__border">Сливочно-черничное с цельными</span></a></h3>
+                            <h3 class="catalog-item__title"><a href="#" class="catalog-item__link"><span class="site-links__border">Сливочно-черничное с цельными ягодами черники</span></a></h3>
                             <img src="img/blueberry.jpg" alt="Сливочно-черничное с цельными" width="267" height="267">
                             <p class="catalog-item__price"><span class="value">410</span><span class="weight">/кг</span></p>
                             <div class="catalog-item__hover">
@@ -247,7 +247,7 @@
                             </div>
                         </li>
                         <li class="catalog__item catalog-item">
-                            <h3 class="catalog-item__title"><a href="#" class="catalog-item__link"><span class="site-links__border">Сливочно-лимонное с карамельной</span></a></h3>
+                            <h3 class="catalog-item__title"><a href="#" class="catalog-item__link"><span class="site-links__border">Сливочно-лимонное с карамельной присыпкой</span></a></h3>
                             <img src="img/lemon.jpg" alt="Сливочно-лимонное с карамельной" width="267" height="267">
                             <p class="catalog-item__price"><span class="value">375</span><span class="weight">/кг</span></p>
                             <div class="catalog-item__hover">
@@ -313,7 +313,7 @@
                     </ul>
                 </div>
             </main>
-            <footer class="footer container footer-catalog">
+            <footer class="footer footer-catalog">
                     <ul class="social-list">
                             <li class="social-list__item">
                                 <a class="social-list__link social-list__link--tw" href="#">Твиттер
@@ -335,14 +335,14 @@
                             </li>
                             <li class="social-list__item">
                                 <a class="social-list__link social-list__link--inst" href="#">Инстаграм
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                         width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                                         <g>
                                             <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
                                                 h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
                                             <path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659
                                                 c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
-                                            <rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
+                                              <rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
                                             <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
                                                     M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
                                                 h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
@@ -352,7 +352,7 @@
                             </li>
                             <li class="social-list__item">
                                 <a class="social-list__link social-list__link--fb" href="#">Фейсбук
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                         width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                                         <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
                                        v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
@@ -361,7 +361,7 @@
                             </li>
                             <li class="social-list__item">
                                 <a class="social-list__link social-list__link--vk" href="#">Вконтакте
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                         width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                                         <g>
                                             <path fill="#FFFFFF" d="M16.637,14.495c0.402-0.019,0.719-0.082,0.951-0.188c0.326-0.145,0.54-0.33,0.641-0.559
