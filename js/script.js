@@ -6,18 +6,12 @@ var popupform = document.querySelector(".modal__form");
 var username = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 var text = popup.querySelector("[name=text]");
-var storageUsername = localStorage.getItem("username");
-var storageEmail = localStorage.getItem("email");
 
 feedback.addEventListener("click",function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
     popupwrap.classList.add("modal-wrap__show");
     username.focus();
-    if(storageUsername && storageEmail){
-        username.value = storageUsername;
-        email.value = storageEmail;
-    }
 });
 
 popupclose.addEventListener("click",function (evt) {
@@ -37,8 +31,5 @@ popupform.addEventListener("submit",function (evt) {
     if(!username.value || !email.value || !text.value) {
     evt.preventDefault();
     popup.classList.add("modal-error");
-    } else {
-        localStorage.setItem("username", username.value);
-        localStorage.setItem("email", email.value);
     }
 });
