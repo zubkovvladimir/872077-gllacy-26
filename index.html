@@ -202,10 +202,11 @@
                     <h2 class="visually-hidden">Адрес офиса</h2>
                         <p>Адрес главного офиса</p><p>и офлайн-магазина:</p><p><span>ул. Большая Конюшенная</span></p><p><span> 19/8, Санкт-Петербург</span></p>
                         <p>Для заказов по телефону: </p><p><a class="address-phone" href="tel:+78124502525">8 812 450-25-25</a></p><p>(с 10 до 20 ежедневно)</p>
-                        <a class="btn address__btn" href="#">Форма обратной связи</a>
+                        <a class="btn address__btn" href="feedback.html">Форма обратной связи</a>
                     </section>
 
                     <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572539526088!5m2!1sru!2sru" width="1200" height="430" style="border:0;" allowfullscreen=""></iframe>
                         <img src="img/map.png" width="1200" height="430" alt="Карта">
                         <img class="pin" src="img/pin.svg" width="80" height="140" alt="Метка">
                         <img class="shadow" src="img/map-shadow.png" width="182" height="110" alt="Тень">
@@ -297,25 +298,25 @@
                     <span>Сделано в <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><span class="site-links__border">HTML Academy</span></a> © 2019</span>
                 </p>
             </footer>
-            <div class="modal-wrap">
-                <section class="modal">
-                    <h2 class="visually-hidden">Обратная связь</h2>
-                    <p class="modal__title">Мы обязательно вам ответим!</p>
-                    <button class="modal__btn-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-                    <form class="modal__form" action="#" method="POST">
-                        <label class="modal__form--name"><span  class="visually-hidden">Имя Фамилия</span>
-                            <input type="text" class="modal__form--input input-shadow" name="name" placeholder="Имя Фамилия" required>
-                        </label>
-                        <label class="modal__form--email"><span  class="visually-hidden">Почта</span>
-                            <input type="email" class="modal__form--input input-shadow" name="email" placeholder="email@example.com" required>
-                        </label>
-                        <label class="modal__form--text"><span  class="visually-hidden">Текст сообщения</span>
-                            <textarea class="modal__form--field input-shadow" name="text" rows="6" placeholder="В свободной форме" required></textarea>
-                        </label>
-                        <button class="btn modal__form--btn" type="submit">Отправить</button>
-                    </form>
-                </section>
-            </div> 
+            <div class="modal-wrap"></div> 
+            <section class="modal">
+                <h2 class="visually-hidden">Обратная связь</h2>
+                <p class="modal__title">Мы обязательно вам ответим!</p>
+                <button class="modal__btn-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+                <form class="modal__form" action="#" method="POST">
+                    <label class="modal__form--name"><span  class="visually-hidden">Имя Фамилия</span>
+                        <input type="text" class="modal__form--input input-shadow zhopa" name="name" placeholder="Имя Фамилия">
+                    </label>
+                    <label class="modal__form--email"><span  class="visually-hidden">Почта</span>
+                        <input type="email" class="modal__form--input input-shadow popa" name="email" placeholder="email@example.com">
+                    </label>
+                    <label class="modal__form--text"><span  class="visually-hidden">Текст сообщения</span>
+                        <textarea class="modal__form--field input-shadow" name="text" rows="6" placeholder="В свободной форме"></textarea>
+                    </label>
+                    <button class="btn modal__form--btn" type="submit">Отправить</button>
+                </form>
+            </section>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
