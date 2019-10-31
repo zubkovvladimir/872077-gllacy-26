@@ -22,10 +22,10 @@
                             <li class="site-links__item"><a class="site-links__catalog" href="#"><span class="site-links__border">Каталог</span></a>
                                 <ul class="sub-menu">
                                     <li class="sub-menu__item"><p>Новинки</p></li>
-                                    <li class="sub-menu__item"><a href="gllacy-catalog.html">Сливочное</a></li>
-                                    <li class="sub-menu__item"><a href="#">Щербеты</a></li>
-                                    <li class="sub-menu__item"><a href="#">Фруктовый лед</a></li>
-                                    <li class="sub-menu__item"><a href="#">Мелорин</a></li>
+                                    <li class="sub-menu__item"><a class="sub-menu__item--link" href="gllacy-catalog.html">Сливочное</a></li>
+                                    <li class="sub-menu__item"><a class="sub-menu__item--link" href="#">Щербеты</a></li>
+                                    <li class="sub-menu__item"><a class="sub-menu__item--link" href="#">Фруктовый лед</a></li>
+                                    <li class="sub-menu__item"><a class="sub-menu__item--link" href="#">Мелорин</a></li>
                                 </ul>
                             </li>
                             <li class="site-links__item"><a class="site-links__deliverynpay" href="#"><span class="site-links__border">Доставка и оплата</span></a>
@@ -129,7 +129,7 @@
                             <h2 class="offer__title">Шоколадки даром!</h2>
                             <p class="offer__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
                             </p>
-                            <a class="btn offer__link" href="#">Хочу шоколадки!</a>
+                            <a class="btn offer__link offer__link--width" href="#">Хочу шоколадки!</a>
                         </article>
                         </li>
                     </ul>
@@ -138,7 +138,7 @@
                 <section class="bestsellers">
                     <h2 class="visually-hidden">Хиты продаж</h2>
                     <ul class="catalog__list">
-                        <li class="catalog__item catalog-item">
+                        <li class="catalog__item hit">
                             <h3 class="catalog-item__title"><a href="#" class="catalog-item__link"><span class="site-links__border">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a></h3>
                             <img src="img/icecitrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
                             <p class="catalog-item__price"><span class="value">310</span><span class="weight">/кг</span></p>
@@ -181,27 +181,20 @@
                 </section>
 
                 <div class="news-subscription-wrap container">
-                    <ul class="news-subscription__list">
-                        <li>
-                            <article class="news-blog">
-                                <h2 class="news-blog__title">Новое в нашем блоге</h2>
-                                <a href="#" class="news-blog__description">10 способов сервировки фруктовых щербетов к столу</a>
-                            </article>
-                        </li>
-
-                        <li>
-                            <section class="subscription">
-                                <h2 class="visually-hidden">Рассылка</h2>
-                                <div class="subscription__wrap">
-                                    <p class="subscription__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-                                    <form action="#" method="POST">
-                                        <input class="subscription-input input-shadow" type="text" placeholder="email@example.com" required>
-                                        <button class="btn subscription__button" type="submit">Отправить</button>
-                                    </form>
-                                </div>
-                            </section>
-                        </li>
-                    </ul>
+                    <article class="news-blog">
+                        <h2 class="news-blog__title">Новое в нашем блоге</h2>
+                        <a href="#" class="news-blog__description">10 способов сервировки фруктовых щербетов к столу</a>
+                    </article>
+                    <section class="subscription">
+                        <h2 class="visually-hidden">Рассылка</h2>
+                        <div class="subscription__wrap">
+                            <p class="subscription__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                            <form action="#" method="POST">
+                                <input class="subscription-input input-shadow" type="text" placeholder="email@example.com" required>
+                                <button class="btn subscription__button" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </section>
                 </div>
 
                 <div class="map-address">
@@ -304,23 +297,25 @@
                     <span>Сделано в <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><span class="site-links__border">HTML Academy</span></a> © 2019</span>
                 </p>
             </footer>
-            <section class="modal">
-                <h2 class="visually-hidden">Обратная связь</h2>
-                <p class="modal__title">Мы обязательно вам ответим!</p>
-                <button class="modal__btn-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-                <form class="modal__form" action="#" method="POST">
-                    <label class="modal__form--name"><span  class="visually-hidden">Имя Фамилия</span>
-                        <input type="text" class="modal__form--input input-shadow" name="name" placeholder="Имя Фамилия" required>
-                    </label>
-                    <label class="modal__form--email"><span  class="visually-hidden">Почта</span>
-                        <input type="email" class="modal__form--input input-shadow" name="email" placeholder="email@example.com" required>
-                    </label>
-                    <label class="modal__form--text"><span  class="visually-hidden">Текст сообщения</span>
-                        <textarea class="modal__form--field input-shadow" name="text" rows="6" placeholder="В свободной форме" required></textarea>
-                    </label>
-                    <button class="btn modal__form--btn" type="submit">Отправить</button>
-                </form>
-            </section>
+            <div class="modal-wrap">
+                <section class="modal">
+                    <h2 class="visually-hidden">Обратная связь</h2>
+                    <p class="modal__title">Мы обязательно вам ответим!</p>
+                    <button class="modal__btn-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+                    <form class="modal__form" action="#" method="POST">
+                        <label class="modal__form--name"><span  class="visually-hidden">Имя Фамилия</span>
+                            <input type="text" class="modal__form--input input-shadow" name="name" placeholder="Имя Фамилия" required>
+                        </label>
+                        <label class="modal__form--email"><span  class="visually-hidden">Почта</span>
+                            <input type="email" class="modal__form--input input-shadow" name="email" placeholder="email@example.com" required>
+                        </label>
+                        <label class="modal__form--text"><span  class="visually-hidden">Текст сообщения</span>
+                            <textarea class="modal__form--field input-shadow" name="text" rows="6" placeholder="В свободной форме" required></textarea>
+                        </label>
+                        <button class="btn modal__form--btn" type="submit">Отправить</button>
+                    </form>
+                </section>
+            </div> 
         </div>
     </body>
 </html>
